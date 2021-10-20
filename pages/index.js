@@ -1,0 +1,27 @@
+import Head from 'next/head'
+import Nav from '../components/Nav'
+import HeroSection from '../components/homepage/HeroSection'
+import OurServices from '../components/homepage/OurServices'
+import PortfolioOne from '../components/homepage/PortfolioOne'
+import Benefit from '../components/homepage/BenefitSection'
+import PortfolioTwo from '../components/homepage/PortfolioTwo'
+export default function Home() {
+  return (
+    <div>
+      <Head>
+        <title>MernSoft | App Development Company in Dhaka, Bangladesh</title>
+        <meta
+          name='description'
+          content='App Development Company in Dhaka, Bangladesh'
+        />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+      <Nav />
+      <HeroSection />
+      <OurServices />
+      <PortfolioOne />
+      <Benefit />
+      <PortfolioTwo />
+    </div>
+  )
+}
