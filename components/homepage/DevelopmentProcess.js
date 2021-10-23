@@ -1,0 +1,63 @@
+import React, {useState} from 'react'
+import {ChevronDownIcon, ChevronRightIcon} from '@heroicons/react/solid'
+import Process from './Process'
+const DevelopmentProcess = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  return (
+    <div className='max-w-7xl mx-auto px-4 py-5 my-10'>
+      <div className='flex'>
+        <div className='flex-1'>
+          <h1 className='text-secondary font-bold text-3xl'>
+            We Turn An Idea <br />
+            Into <span className='text-primary'> Smart Software</span>
+          </h1>
+          <p className='text-paragraphColor font-bold py-5'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, hic sequi delectus tempora voluptatibus dolor magnam
+            quos tempore suscipit, eum minima.expedita deserunt eos iste nobis
+            doloribus rerum repudiandae
+          </p>
+          <div className='cored-section my-10 '>
+            {Process.map((item) => (
+              <div className='processes p-5 my-5 shadow-default bg-white rounded-2xl'>
+                <div className='flex justify-between'>
+                  <h1 className='text-secondary font-bold text-xl'>
+                    {item.title}
+                  </h1>
+                  <a onClick={() => setIsOpen(!isOpen)}>
+                    <ChevronRightIcon className='w-5 h-5s ml-3 my-auto bg-primary text-white rounded-full   border-2 border-primary' />
+                  </a>
+                </div>
+                <p
+                  className={`${
+                    isOpen ? '' : 'hidden'
+                  } text-paragraphColor font-bold pt-5`}>
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className='flex-1 m-auto'>
+          <div className='flex'>
+            <div className='flex-1 m-5 mb-0'>
+              <img
+                className='mb-5 w-56 float-right'
+                src='/we-turn-one.png'
+                alt='img'
+              />
+              <img src='/we-turn-two.png' alt='img' />
+            </div>
+            <div className='flex-1 relative'>
+              <div className='absolute bottom-0'>
+                <img className='w-56' src='/we-turn-three.png' alt='img' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default DevelopmentProcess

@@ -17,7 +17,7 @@ const PortfolioOne = () => {
               Our Portfolio
             </span>
           </div>
-          <h1 className='text-secondary font-bold text-3xl py-5'>Helix-d</h1>
+          <h1 className='text-secondary font-bold text-3xl py-5'>Naturalabs</h1>
           <p className='text-paragraphColor font-bold py-5'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
             temporibus. Quod minima non aliquam, nobis quibusdam earum odit
