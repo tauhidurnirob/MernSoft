@@ -5,6 +5,7 @@ import OurServices from '../components/homepage/OurServices'
 import PortfolioOne from '../components/homepage/PortfolioOne'
 import Benefit from '../components/homepage/BenefitSection'
 import PortfolioTwo from '../components/homepage/PortfolioTwo'
+import DevelopmentProcess from '../components/homepage/DevelopmentProcess'
 export default function Home() {
   return (
     <div>
@@ -22,6 +23,7 @@ export default function Home() {
       <PortfolioOne />
       <Benefit />
       <PortfolioTwo />
+      <DevelopmentProcess />
     </div>
   )
 }
