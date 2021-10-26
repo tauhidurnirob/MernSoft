@@ -1,11 +1,18 @@
 import React, {useState} from 'react'
 import {ChevronDownIcon, ChevronRightIcon} from '@heroicons/react/solid'
-import Process from './Process'
+import ProcessData from './ProcessData'
 const DevelopmentProcess = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(null)
+
+  const toggle = (index) => {
+    if (isOpen === index) {
+      return setIsOpen(null)
+    }
+    setIsOpen(index)
+  }
   return (
     <div className='max-w-7xl mx-auto px-4 py-5 my-10'>
-      <div className='flex'>
+      <div className='flex flex-col md:flex-row'>
         <div className='flex-1'>
           <h1 className='text-secondary font-bold text-3xl'>
             We Turn An Idea <br />
@@ -18,21 +25,22 @@ const DevelopmentProcess = () => {
             doloribus rerum repudiandae
           </p>
           <div className='cored-section my-10 '>
-            {Process.map((item) => (
+            {ProcessData.map((item, index) => (
               <div className='processes p-5 my-5 shadow-default bg-white rounded-2xl'>
                 <div className='flex justify-between'>
                   <h1 className='text-secondary font-bold text-xl'>
                     {item.title}
                   </h1>
-                  <a onClick={() => setIsOpen(!isOpen)}>
-                    <ChevronRightIcon className='w-5 h-5s ml-3 my-auto bg-primary text-white rounded-full   border-2 border-primary' />
+                  <a onClick={() => toggle(index)} key={index}>
+                    {isOpen === index ? (
+                      <ChevronDownIcon className='w-5 bg-primary text-white rounded-full' />
+                    ) : (
+                      <ChevronRightIcon className='w-5 bg-primary text-white rounded-full' />
+                    )}
                   </a>
                 </div>
-                <p
-                  className={`${
-                    isOpen ? '' : 'hidden'
-                  } text-paragraphColor font-bold pt-5`}>
-                  {item.description}
+                <p className='text-paragraphColor font-bold pt-3'>
+                  {isOpen === index ? item.description : null}
                 </p>
               </div>
             ))}

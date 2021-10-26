@@ -1,5 +1,5 @@
 import React from 'react'
-import Services from './services'
+import Services from './servicesData'
 
 import {ChevronRightIcon} from '@heroicons/react/solid'
 const ourServices = () => {
@@ -12,11 +12,11 @@ const ourServices = () => {
             style={{
               backgroundImage: 'url(/services-bg.png)',
               backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center'
+              backgroundPosition: 'top'
             }}>
-            <div className='flex-1 md:mt-36 mt-0'>
+            <div className='flex-1'>
               {' '}
-              <div className='shadow-default bg-white  py-8 m-2 sm:m-5 md:m-8  rounded-3xl text-center'>
+              <div className='shadow-default bg-white  p-8 m-3 sm:m-5 md:m-8  rounded-3xl text-center'>
                 <img
                   className='md:w-16 w-12 h-auto mx-auto'
                   src='/servicesIcons/colorMode.png'
@@ -30,7 +30,7 @@ const ourServices = () => {
                   </h1>
                 </div>
               </div>
-              <div className='shadow-default bg-white py-8 m-2 sm:m-5 md:m-8   rounded-3xl text-center'>
+              <div className='shadow-default bg-white py-8 m-3 sm:m-5 md:m-8   rounded-3xl text-center'>
                 <img
                   className='sm:w-16 w-12 h-auto mx-auto'
                   src='/servicesIcons/webDevelopment.png'
@@ -44,8 +44,8 @@ const ourServices = () => {
                 </div>
               </div>
             </div>
-            <div className='flex-1 md:mt-56 mt-0'>
-              <div className='shadow-default bg-white  py-8 m-2 sm:m-5 md:m-8  rounded-3xl text-center'>
+            <div className='flex-1 md:mt-24 mt-0'>
+              <div className='shadow-default bg-white  py-8 m-3 sm:m-5 md:m-8  rounded-3xl text-center'>
                 <img
                   className='sm:w-16 w-12 h-auto mx-auto'
                   src='/servicesIcons/androidDevelopment.png'
@@ -58,7 +58,7 @@ const ourServices = () => {
                   </h1>
                 </div>
               </div>
-              <div className='shadow-default bg-white  py-8 m-2 sm:m-5 md:m-8  rounded-3xl text-center'>
+              <div className='shadow-default bg-white  py-8 m-3 sm:m-5 md:m-8  rounded-3xl text-center'>
                 <img
                   className='sm:w-16 w-12 h-auto mx-auto'
                   src='/servicesIcons/iosDevelopment.png'
