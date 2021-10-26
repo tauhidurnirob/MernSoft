@@ -6,6 +6,8 @@ import PortfolioOne from '../components/homepage/PortfolioOne'
 import Benefit from '../components/homepage/BenefitSection'
 import PortfolioTwo from '../components/homepage/PortfolioTwo'
 import DevelopmentProcess from '../components/homepage/DevelopmentProcess'
+import ClientsReview from '../components/homepage/ClientsReview'
+import ClientsLogo from '../components/homepage/ClientsLogo'
 export default function Home() {
   return (
     <div>
@@ -15,7 +17,6 @@ export default function Home() {
           name='description'
           content='App Development Company in Dhaka, Bangladesh'
         />
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Nav />
       <HeroSection />
@@ -24,6 +25,8 @@ export default function Home() {
       <Benefit />
       <PortfolioTwo />
       <DevelopmentProcess />
+      <ClientsReview />
+      <ClientsLogo />
     </div>
   )
 }

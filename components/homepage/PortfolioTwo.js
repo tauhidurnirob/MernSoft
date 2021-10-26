@@ -25,7 +25,7 @@ const PortfolioOne = () => {
           </p>
           <a href='#' className='flex text-lg font-bold text-primary'>
             Live Demo
-            <ChevronRightIcon className='w-5 h-5s ml-3 my-auto bg-primary text-white rounded-full   border-2 border-primary' />
+            <ChevronRightIcon className='w-5 h-5 ml-3 my-auto bg-primary text-white rounded-full   border-2 border-primary' />
           </a>
         </div>
         <div className='flex-1 mx-auto'>

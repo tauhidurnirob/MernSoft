@@ -103,7 +103,7 @@ const Nav = () => {
                 className='px-2 pt-2 pb-3 space-y-1 sm:px-3 font-bold'>
                 <a
                   href='#'
-                  className='flex hover:text-primary block px-3 py-2 text-base'>
+                  className='flex hover:text-primary px-3 py-2 text-base'>
                   About
                   <img src='/icons/navicon.png' alt='icon' />
                 </a>

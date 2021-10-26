@@ -4,12 +4,10 @@ const BenefitSection = () => {
   return (
     <div className='max-w-7xl mx-auto px-4 py-10  my-10'>
       <div
-        className='container-bg rounded-3xl'
         style={{
           backgroundImage: 'url(/benefits-bg.png)',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          borderRadius: '100px'
+          backgroundPosition: 'center'
         }}>
         <h1 className='text-3xl font-bold text-secondary py-10 text-center '>
           Benefits
