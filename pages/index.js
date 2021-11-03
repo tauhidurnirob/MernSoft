@@ -8,6 +8,10 @@ import PortfolioTwo from '../components/homepage/PortfolioTwo'
 import DevelopmentProcess from '../components/homepage/DevelopmentProcess'
 import ClientsReview from '../components/homepage/ClientsReview'
 import ClientsLogo from '../components/homepage/ClientsLogo'
+import Solution from '../components/homepage/SolutionSection'
+import Blog from '../components/homepage/Blog'
+import ContactUs from '../components/ContactUs'
+import Footer from '../components/Footer'
 export default function Home() {
   return (
     <div>
@@ -27,6 +31,10 @@ export default function Home() {
       <DevelopmentProcess />
       <ClientsReview />
       <ClientsLogo />
+      <Solution />
+      <Blog />
+      <ContactUs />
+      <Footer />
     </div>
   )
 }

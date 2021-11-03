@@ -10,10 +10,10 @@ const PortfolioOne = () => {
         backgroundPosition: 'center',
         backgroundSize: 'cover'
       }}>
-      <div className='flex flex-col md:flex-row max-w-7xl mx-auto px-4 py-5 '>
+      <div className='flex flex-col md:flex-row custom-container'>
         <div className='flex-1 md:my-auto my-10'>
           <div className='our-portfolio py-5'>
-            <span className='font-bold text-3xl text-primary border-2 border-primary rounded-full px-5 py-3'>
+            <span className='title border-2 text-primary border-primary rounded-full px-5 py-3'>
               Our Portfolio
             </span>
           </div>

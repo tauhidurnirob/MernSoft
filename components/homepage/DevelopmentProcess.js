@@ -11,10 +11,10 @@ const DevelopmentProcess = () => {
     setIsOpen(index)
   }
   return (
-    <div className='max-w-7xl mx-auto px-4 py-5 my-10'>
+    <div className='custom-container my-10'>
       <div className='flex flex-col md:flex-row'>
         <div className='flex-1'>
-          <h1 className='text-secondary font-bold text-3xl'>
+          <h1 className='title'>
             We Turn An Idea <br />
             Into <span className='text-primary'> Smart Software</span>
           </h1>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const ClientsReview = () => {
   return (
-    <div className='max-w-7xl mx-auto  px-4 py-5'>
+    <div className='custom-container'>
       <div>
         <div
           className='flex flex-col md:flex-row'
@@ -13,7 +13,7 @@ const ClientsReview = () => {
             backgroundPositionY: 'center'
           }}>
           <div className='flex-auto '>
-            <h1 className='md:ml-28 ml-5 text-3xl text-primary font-bold'>
+            <h1 className='md:ml-28 ml-5  text-primary title'>
               Clients <br /> <span className='text-secondary'>Review</span>
             </h1>
             <div className='review-container shadow-default bg-white rounded-3xl p-5 m-5 md:mr-0 mr-5 mb-0 w-auto md:w-96'>
