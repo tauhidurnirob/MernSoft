@@ -4,11 +4,11 @@ import Services from './servicesData'
 import {ChevronRightIcon} from '@heroicons/react/solid'
 const ourServices = () => {
   return (
-    <div className='max-w-7xl mx-auto px-4 py-5'>
+    <div className='custom-container'>
       <div className='flex flex-col md:flex-row'>
         <div className='flex-1 services-icons'>
           <div
-            className='card-container flex justify-items-center text-center rounded-3xl'
+            className='flex flex-col sm:flex-row'
             style={{
               backgroundImage: 'url(/services-bg.png)',
               backgroundRepeat: 'no-repeat',
@@ -16,66 +16,61 @@ const ourServices = () => {
             }}>
             <div className='flex-1'>
               {' '}
-              <div className='shadow-default bg-white  p-8 m-3 sm:m-5 md:m-8  rounded-3xl text-center'>
+              <div className='icon-card'>
                 <img
-                  className='md:w-16 w-12 h-auto mx-auto'
+                  className='icon-card-image'
                   src='/servicesIcons/colorMode.png'
                   alt='icon'
                 />
 
-                <div className='title pt-5'>
-                  <h1 className='font-bold text-secondary'>
-                    UI / UX <br />
-                    Design
-                  </h1>
-                </div>
+                <h1 className='icon-card-title'>
+                  UI / UX <br />
+                  Design
+                </h1>
               </div>
-              <div className='shadow-default bg-white py-8 m-3 sm:m-5 md:m-8   rounded-3xl text-center'>
+              <div className='icon-card'>
                 <img
-                  className='sm:w-16 w-12 h-auto mx-auto'
+                  className='icon-card-image'
                   src='/servicesIcons/webDevelopment.png'
                   alt='icon'
                 />
-                <div className='title pt-5'>
-                  <h1 className='font-bold text-secondary'>
-                    Web <br />
-                    Development
-                  </h1>
-                </div>
+
+                <h1 className='icon-card-title'>
+                  Web <br />
+                  Development
+                </h1>
               </div>
             </div>
             <div className='flex-1 md:mt-24 mt-0'>
-              <div className='shadow-default bg-white  py-8 m-3 sm:m-5 md:m-8  rounded-3xl text-center'>
+              <div className='icon-card'>
                 <img
-                  className='sm:w-16 w-12 h-auto mx-auto'
+                  className='icon-card-image'
                   src='/servicesIcons/androidDevelopment.png'
                   alt='icon'
                 />
-                <div className='title pt-5'>
-                  <h1 className='font-bold text-secondary'>
-                    Android <br />
-                    Development
-                  </h1>
-                </div>
+
+                <h1 className='icon-card-title'>
+                  Android <br />
+                  Development
+                </h1>
               </div>
-              <div className='shadow-default bg-white  py-8 m-3 sm:m-5 md:m-8  rounded-3xl text-center'>
+              <div className='icon-card'>
                 <img
-                  className='sm:w-16 w-12 h-auto mx-auto'
+                  className='icon-card-image '
                   src='/servicesIcons/iosDevelopment.png'
                   alt='icon'
                 />
-                <div className='title pt-5'>
-                  <h1 className='font-bold text-secondary'>
-                    ios <br />
-                    Development
-                  </h1>
-                </div>
+
+                <h1 className='icon-card-title'>
+                  ios <br />
+                  Development
+                </h1>
               </div>
             </div>
           </div>
         </div>
         <div className='flex-1 md:my-auto my-10 md:ml-5 ml-0 services-details'>
-          <h1 className='text-secondary font-bold lg:text-4xl text-3xl'>
+          <h1 className='title'>
             Our <span className='text-primary'>Services</span>
           </h1>
           <p className='text-paragraphColor font-bold my-10'>

@@ -52,9 +52,7 @@ const Nav = () => {
                     Blog
                   </a>
 
-                  <a
-                    href='#'
-                    className='transition duration-500 ease-in-out bg-primary text-white hover:bg-white hover:text-primary px-4 py-2 rounded-full border-2 border-primary'>
+                  <a href='#' className='call-to-action'>
                     Contact Us
                   </a>
                 </div>
