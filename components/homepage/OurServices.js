@@ -1,5 +1,5 @@
 import React from 'react'
-import Services from './servicesData'
+import {Services} from './servicesData'
 
 import {ChevronRightIcon} from '@heroicons/react/solid'
 const ourServices = () => {

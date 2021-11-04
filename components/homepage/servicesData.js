@@ -1,6 +1,6 @@
 import {v4 as uuidv4} from 'uuid'
 
-export default [
+export const Services = [
   {
     id: uuidv4(),
     imageUrl: '/servicesIcons/strategyNews.png',
