@@ -14,7 +14,7 @@ export default class ClientsLogo extends Component {
       slidesToScroll: 1,
       autoplay: true,
       speed: 5000,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 0,
       cssEase: 'linear'
     }
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Benefits from './BenefitsData'
+import {Benefits} from './BenefitsData'
 const BenefitSection = () => {
   return (
     <div className='custom-container py-10  my-10'>

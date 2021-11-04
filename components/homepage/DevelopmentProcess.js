@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {ChevronDownIcon, ChevronRightIcon} from '@heroicons/react/solid'
-import ProcessData from './ProcessData'
+import {ProcessData} from './ProcessData'
 const DevelopmentProcess = () => {
   const [isOpen, setIsOpen] = useState(null)
 
@@ -26,12 +26,14 @@ const DevelopmentProcess = () => {
           </p>
           <div className='cored-section my-10 '>
             {ProcessData.map((item, index) => (
-              <div className='processes p-5 my-5 shadow-default bg-white rounded-2xl'>
+              <div
+                className='processes p-5 my-5 shadow-default bg-white rounded-2xl'
+                key={index}>
                 <div className='flex justify-between'>
                   <h1 className='text-secondary font-bold text-xl'>
                     {item.title}
                   </h1>
-                  <a onClick={() => toggle(index)} key={index}>
+                  <a onClick={() => toggle(index)}>
                     {isOpen === index ? (
                       <ChevronDownIcon className='w-5 bg-primary text-white rounded-full' />
                     ) : (

@@ -28,34 +28,122 @@ const Nav = () => {
             </div>
             <div className='flex items-center my-auto'>
               <div className='hidden md:block'>
-                <div className='ml-10 flex items-baseline space-x-4 font-bold lg:text-base text-xs'>
-                  <a
-                    href='#'
-                    className='relative flex hover:text-primary px-2 py-2 '>
-                    About
-                    <ChevronDownIcon className='lg:w-7 lg:h-7 w-5 h-5 text-primary' />
-                  </a>
+                <ul className='ml-10 flex items-baseline space-x-4 font-bold lg:text-base text-xs'>
+                  <li>
+                    <a className='dropdown relative flex hover:text-primary px-2 py-2 cursor-pointer '>
+                      About
+                      <ChevronDownIcon className='dropdown-arrow lg:w-7 lg:h-7 w-5 h-5 text-primary' />
+                      <ul className='dropdown-menu hidden absolute top-10 w-max rounded-lg shadow-default bg-white pt-2'>
+                        <li>
+                          <a
+                            href='#'
+                            className='flex  text-secondary py-4 px-6  whitespace-no-wrap'>
+                            <img
+                              className='mr-2'
+                              src='/navIcon/people.png'
+                              alt='img'
+                            />
+                            Our Company
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
+                            <img
+                              className='mr-2'
+                              src='/navIcon/personalGrowth.png'
+                              alt='img'
+                            />
+                            How We Work
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
+                            <img
+                              className='mr-2'
+                              src='/navIcon/workspace.png'
+                              alt='img'
+                            />
+                            Career
+                          </a>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
 
-                  <a href='#' className='hover:text-primary px-2 py-2'>
-                    Services
-                  </a>
+                  <li>
+                    <a href='#' className='hover:text-primary px-2 py-2'>
+                      Services
+                    </a>
+                  </li>
 
-                  <a href='#' className='hover:text-primary px-2 py-2 '>
-                    Technologies
-                  </a>
+                  <li>
+                    <a href='#' className='hover:text-primary px-2 py-2 '>
+                      Technologies
+                    </a>
+                  </li>
 
-                  <a href='#' className='flex hover:text-primary px-2 py-2 '>
-                    Portfolio
-                    <ChevronDownIcon className='lg:w-7 lg:h-7 w-5 h-5 text-primary' />
-                  </a>
-                  <a href='#' className='hover:text-primary px-2 py-2 '>
-                    Blog
-                  </a>
+                  <li>
+                    <a className='flex dropdown hover:text-primary px-2 py-2 cursor-pointer'>
+                      Portfolio
+                      <ChevronDownIcon className='dropdown-arrow lg:w-7 lg:h-7 w-5 h-5 text-primary' />
+                      <ul className='dropdown-menu hidden absolute top-10 mt-5 w-max rounded-lg shadow-default bg-white pt-2'>
+                        <li>
+                          <a
+                            href='#'
+                            className='flex  text-secondary py-4 px-6  whitespace-no-wrap'>
+                            <img
+                              className='mr-2'
+                              src='/navIcon/people.png'
+                              alt='img'
+                            />
+                            Our Company
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
+                            <img
+                              className='mr-2'
+                              src='/navIcon/personalGrowth.png'
+                              alt='img'
+                            />
+                            How We Work
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
+                            <img
+                              className='mr-2'
+                              src='/navIcon/workspace.png'
+                              alt='img'
+                            />
+                            Career
+                          </a>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li>
+                    {' '}
+                    <a href='#' className='hover:text-primary px-2 py-2 '>
+                      Blog
+                    </a>
+                  </li>
 
-                  <a href='#' className='call-to-action'>
-                    Contact Us
-                  </a>
-                </div>
+                  <li>
+                    {' '}
+                    <a href='#' className='call-to-action'>
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className='-mr-2 flex md:hidden'>
@@ -99,34 +187,116 @@ const Nav = () => {
               <div
                 ref={ref}
                 className='px-2 pt-2 pb-3 space-y-1 sm:px-3 font-bold'>
-                <a
-                  href='#'
-                  className='flex hover:text-primary px-3 py-2 text-base'>
-                  About
-                  <img src='/icons/navicon.png' alt='icon' />
-                </a>
+                <ul className='absolute top-15 bg-white w-full py-8 z-50'>
+                  <a
+                    href='#'
+                    className='dropdown flex justify-between hover:text-primary px-3 py-2 text-base'>
+                    About
+                    <img src='/icons/navicon.png' alt='icon' />
+                    <ul className='dropdown-menu hidden absolute top-15 my-8 w-11/12 rounded-lg shadow-default bg-white pt-2'>
+                      <li>
+                        <a
+                          href='#'
+                          className='flex  text-secondary py-4 px-6  whitespace-no-wrap'>
+                          <img
+                            className='mr-2'
+                            src='/navIcon/people.png'
+                            alt='img'
+                          />
+                          Our Company
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href='#'
+                          className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
+                          <img
+                            className='mr-2'
+                            src='/navIcon/personalGrowth.png'
+                            alt='img'
+                          />
+                          How We Work
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href='#'
+                          className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
+                          <img
+                            className='mr-2'
+                            src='/navIcon/workspace.png'
+                            alt='img'
+                          />
+                          Career
+                        </a>
+                      </li>
+                    </ul>
+                  </a>
 
-                <a href='#' className=' hover:text-primary block px-3 py-2'>
-                  Services
-                </a>
+                  <a href='#' className=' hover:text-primary block px-3 py-2'>
+                    Services
+                  </a>
 
-                <a href='#' className='hover:text-primary block px-3 py-2'>
-                  Technologies
-                </a>
+                  <a href='#' className='hover:text-primary block px-3 py-2'>
+                    Technologies
+                  </a>
 
-                <a href='#' className='flex hover:text-primary block px-3 py-2'>
-                  Portfolio
-                  <img src='/icons/navicon.png' alt='icon' />
-                </a>
-                <a href='#' className='hover:text-primary block px-3 pt-2 pb-6'>
-                  Blog
-                </a>
+                  <a
+                    href='#'
+                    className='dropdown flex justify-between hover:text-primary  px-3 py-2'>
+                    Portfolio
+                    <img src='/icons/navicon.png' alt='icon' />
+                    <ul className='dropdown-menu hidden absolute top-15 my-8 w-11/12 rounded-lg shadow-default bg-white pt-2'>
+                      <li>
+                        <a
+                          href='#'
+                          className='flex  text-secondary py-4 px-6  whitespace-no-wrap'>
+                          <img
+                            className='mr-2'
+                            src='/navIcon/people.png'
+                            alt='img'
+                          />
+                          Helix-d
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href='#'
+                          className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
+                          <img
+                            className='mr-2'
+                            src='/navIcon/personalGrowth.png'
+                            alt='img'
+                          />
+                          Naturalabs
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href='#'
+                          className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
+                          <img
+                            className='mr-2'
+                            src='/navIcon/workspace.png'
+                            alt='img'
+                          />
+                          AlphaMatch
+                        </a>
+                      </li>
+                    </ul>
+                  </a>
+                  <a
+                    href='#'
+                    className='hover:text-primary block px-3 pt-2 pb-6'>
+                    Blog
+                  </a>
 
-                <a
-                  href='#'
-                  className='transition duration-500 ease-in-out bg-primary text-white hover:bg-white hover:text-primary px-5 py-2 rounded-full text-sm  border-2 border-primary'>
-                  Contact Us
-                </a>
+                  <a
+                    href='#'
+                    className='transition duration-500 ease-in-out bg-primary text-white hover:bg-white hover:text-primary px-5 py-2 rounded-full text-sm  border-2 border-primary'>
+                    Contact Us
+                  </a>
+                </ul>
               </div>
             </div>
           )}

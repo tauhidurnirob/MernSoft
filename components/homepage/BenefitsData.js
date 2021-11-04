@@ -1,6 +1,6 @@
 import {v4 as uuidv4} from 'uuid'
 
-export default [
+export const Benefits = [
   {
     id: uuidv4(),
     imageUrl: '/benefitsIons/smile.png',

@@ -16,8 +16,15 @@ body,
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
   transition: background 0.3s ease-in-out;
-  margin-bottom: 2.5%;
+  margin-bottom: 1rem;
 }
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown:hover .dropdown-arrow {
+  transform: rotateX(180deg);
+}
+
 @layer components {
   .custom-container {
     @apply max-w-7xl mx-auto px-4 py-5;

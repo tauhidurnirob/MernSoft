@@ -27,7 +27,11 @@ const ClientsReview = () => {
                 facilisis leo, vel fringilla est ullamcorper eget nulla.
               </p>
               <div className='client-name flex'>
-                <img src='/clients/client-one.png' alt='img' />
+                <img
+                  className='w-16 h-16 rounded-full object-fill'
+                  src='/clients/client-one.png'
+                  alt='img'
+                />
                 <h1 className='text-2xl text-secondary ml-5'>
                   Jane <br /> Harrison
                 </h1>
@@ -44,7 +48,11 @@ const ClientsReview = () => {
                 facilisis leo, vel fringilla est ullamcorper eget nulla
               </p>
               <div className='client-name flex'>
-                <img src='/clients/client-two.png' alt='img' />
+                <img
+                  className='w-16 h-16 rounded-full object-fill'
+                  src='/clients/client-two.png'
+                  alt='img'
+                />
                 <h1 className='text-2xl text-secondary ml-5'>
                   Maruice <br /> Webb
                 </h1>
@@ -59,7 +67,11 @@ const ClientsReview = () => {
                 facilisis leo, vel fringilla est ullamcorper eget nulla
               </p>
               <div className='client-name flex'>
-                <img src='/clients/client-Three.png' alt='img' />
+                <img
+                  className='w-16 h-16 rounded-full object-fill'
+                  src='/clients/client-Three.png'
+                  alt='img'
+                />
                 <h1 className='text-2xl text-secondary ml-5'>
                   Richa <br /> Turkstra
                 </h1>
