@@ -30,10 +30,13 @@ body,
     @apply max-w-7xl mx-auto px-4 py-5;
   }
   .call-to-action {
-    @apply transition duration-500 ease-in-out bg-primary text-white hover:bg-white hover:text-primary px-4 py-2 rounded-full border-2 border-primary;
+    @apply transition duration-500 ease-in-out bg-primary text-white hover:bg-white hover:text-primary px-6 py-2 rounded-full border-2 border-primary;
   }
   .title {
     @apply text-secondary font-bold lg:text-4xl text-3xl;
+  }
+  .heroIcon {
+    @apply w-5 h-5 mr-3 my-auto bg-primary text-white rounded-full border-2 border-primary;
   }
   .icon-card {
     @apply shadow-default bg-white  py-12 m-5 md:m-8  rounded-3xl text-center;

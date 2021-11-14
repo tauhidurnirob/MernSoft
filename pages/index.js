@@ -1,17 +1,70 @@
 import Head from 'next/head'
-import Nav from '../components/Nav'
-import HeroSection from '../components/homepage/HeroSection'
-import OurServices from '../components/homepage/OurServices'
-import PortfolioOne from '../components/homepage/PortfolioOne'
-import Benefit from '../components/homepage/BenefitSection'
-import PortfolioTwo from '../components/homepage/PortfolioTwo'
-import DevelopmentProcess from '../components/homepage/DevelopmentProcess'
-import ClientsReview from '../components/homepage/ClientsReview'
-import ClientsLogo from '../components/homepage/ClientsLogo'
-import Solution from '../components/homepage/SolutionSection'
-import Blog from '../components/homepage/Blog'
-import ContactUs from '../components/ContactUs'
-import Footer from '../components/Footer'
+import dynamic from 'next/dynamic'
+
+const Nav = dynamic(() => import('../components/Nav'), {
+  ssr: false
+})
+const HeroSection = dynamic(
+  () => import('../components/homepage/HeroSection'),
+  {
+    ssr: false
+  }
+)
+const OurServices = dynamic(
+  () => import('../components/homepage/OurServices'),
+  {
+    ssr: false
+  }
+)
+const PortfolioOne = dynamic(
+  () => import('../components/homepage/PortfolioOne'),
+  {
+    ssr: false
+  }
+)
+const Benefit = dynamic(() => import('../components/homepage/BenefitSection'), {
+  ssr: false
+})
+const PortfolioTwo = dynamic(
+  () => import('../components/homepage/PortfolioTwo'),
+  {
+    ssr: false
+  }
+)
+const DevelopmentProcess = dynamic(
+  () => import('../components/homepage/DevelopmentProcess'),
+  {
+    ssr: false
+  }
+)
+const ClientsReview = dynamic(
+  () => import('../components/homepage/ClientsReview'),
+  {
+    ssr: false
+  }
+)
+const ClientsLogo = dynamic(
+  () => import('../components/homepage/ClientsLogo'),
+  {
+    ssr: false
+  }
+)
+const Solution = dynamic(
+  () => import('../components/homepage/SolutionSection'),
+  {
+    ssr: false
+  }
+)
+const Blog = dynamic(() => import('../components/homepage/Blog'), {
+  ssr: false
+})
+
+const ContactUs = dynamic(() => import('../components/ContactUs'), {
+  ssr: false
+})
+const Footer = dynamic(() => import('../components/Footer'), {
+  ssr: false
+})
 export default function Home() {
   return (
     <div>
@@ -23,6 +76,7 @@ export default function Home() {
         />
       </Head>
       <Nav />
+
       <HeroSection />
       <OurServices />
       <PortfolioOne />
@@ -33,6 +87,7 @@ export default function Home() {
       <ClientsLogo />
       <Solution />
       <Blog />
+
       <ContactUs />
       <Footer />
     </div>
