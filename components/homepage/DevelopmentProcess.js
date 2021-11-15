@@ -35,9 +35,9 @@ const DevelopmentProcess = () => {
                   </h1>
                   <a onClick={() => toggle(index)}>
                     {isOpen === index ? (
-                      <ChevronDownIcon className='w-5 bg-primary text-white rounded-full' />
+                      <ChevronDownIcon className='heroIcon' />
                     ) : (
-                      <ChevronRightIcon className='w-5 bg-primary text-white rounded-full' />
+                      <ChevronRightIcon className='heroIcon' />
                     )}
                   </a>
                 </div>
