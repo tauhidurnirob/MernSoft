@@ -35,8 +35,11 @@ body,
   .title {
     @apply text-secondary font-bold lg:text-4xl text-3xl;
   }
+  .custom-paragraph {
+    @apply text-paragraphColor font-bold;
+  }
   .heroIcon {
-    @apply w-5 h-5 mr-3 my-auto bg-primary text-white rounded-full border-2 border-primary;
+    @apply w-5 h-5 my-auto bg-primary text-white rounded-full border-2 border-primary;
   }
   .icon-card {
     @apply shadow-default bg-white  py-12 m-5 md:m-8  rounded-3xl text-center;

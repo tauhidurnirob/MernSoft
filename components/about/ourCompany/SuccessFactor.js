@@ -12,7 +12,7 @@ const successFactor = () => {
           <h1 className='text-secondary text-2xl font-semibold mt-10 mb-5'>
             Our Key Success Factors
           </h1>
-          <p className='text-paragraphColor font-bold'>
+          <p className='custom-paragraph'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
             facilis distinctio, maiores ullam tempore blanditiis dolorem debitis
             sapiente suscipit enim tempora molestias quo! Accusantium voluptatum

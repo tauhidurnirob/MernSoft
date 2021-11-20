@@ -22,6 +22,30 @@ const SuccessFactor = dynamic(
     ssr: false
   }
 )
+const OurJourney = dynamic(
+  () => import('/components/about/ourCompany/OurJourney'),
+  {
+    ssr: false
+  }
+)
+const OurDevProcess = dynamic(
+  () => import('/components/about/ourCompany/OurDevProcess'),
+  {
+    ssr: false
+  }
+)
+const FreqAskQuestion = dynamic(
+  () => import('/components/about/ourCompany/FreqAskQuestion'),
+  {
+    ssr: false
+  }
+)
+const ImageGallery = dynamic(
+  () => import('/components/about/ourCompany/ImageGallery'),
+  {
+    ssr: false
+  }
+)
 const ContactUs = dynamic(() => import('../components/ContactUs'), {
   ssr: false
 })
@@ -36,6 +60,10 @@ const ourCompany = () => {
       <HeroSection />
       <Achievements />
       <SuccessFactor />
+      <OurJourney />
+      <OurDevProcess />
+      <FreqAskQuestion />
+      <ImageGallery />
       <ContactUs />
       <Footer />
     </div>
