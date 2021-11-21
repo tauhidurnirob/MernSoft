@@ -30,7 +30,13 @@ body,
     @apply max-w-7xl mx-auto px-4 py-5;
   }
   .call-to-action {
-    @apply transition duration-500 ease-in-out bg-primary text-white hover:bg-white hover:text-primary px-6 py-2 rounded-full border-2 border-primary;
+    @apply transition duration-500 ease-in-out bg-primary text-white hover:bg-white hover:text-primary px-6 py-2 rounded-full border-2 font-bold border-primary;
+  }
+  .lang-navbar-btn {
+    @apply transition duration-500 ease-in-out bg-white text-primary hover:bg-primary hover:text-white px-6 py-2 rounded-full border-2 font-bold border-primary m-2;
+  }
+  .active {
+    @apply bg-primary text-white;
   }
   .title {
     @apply text-secondary font-bold lg:text-4xl text-3xl;
