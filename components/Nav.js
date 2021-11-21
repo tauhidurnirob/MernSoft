@@ -55,7 +55,7 @@ const Nav = () => {
                               <a className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
                                 <img
                                   className='mr-2'
-                                  src='/navIcon/personalGrowth.png'
+                                  src='/navIcon/workspace.png'
                                   alt='img'
                                 />
                                 How We Work
@@ -63,11 +63,11 @@ const Nav = () => {
                             </Link>
                           </li>
                           <li>
-                            <Link href='/Career'>
+                            <Link href='/career'>
                               <a className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
                                 <img
                                   className='mr-2'
-                                  src='/navIcon/workspace.png'
+                                  src=' /navIcon/personalGrowth.png'
                                   alt='img'
                                 />
                                 Career
@@ -178,11 +178,11 @@ const Nav = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href='#'>
+                          <Link href='/howWeWork'>
                             <a className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
                               <img
                                 className='mr-2'
-                                src='/navIcon/personalGrowth.png'
+                                src='/navIcon/workspace.png'
                                 alt='img'
                               />
                               How We Work
@@ -190,11 +190,11 @@ const Nav = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href='#'>
+                          <Link href='/career'>
                             <a className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
                               <img
                                 className='mr-2'
-                                src='/navIcon/workspace.png'
+                                src='/navIcon/personalGrowth.png'
                                 alt='img'
                               />
                               Career
