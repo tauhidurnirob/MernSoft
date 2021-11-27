@@ -2,7 +2,7 @@ import React from 'react'
 
 const Blog = () => {
   return (
-    <div className='custom-container'>
+    <div id='blog-section' className='custom-container'>
       <div className='flex flex-col-reverse sm:flex-row'>
         <div className='flex-1 sm:mt-32 mt-0'>
           <img src='/blogImage/blog-one.png' alt='img' />

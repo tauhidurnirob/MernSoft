@@ -1,10 +1,13 @@
 import React from 'react'
 import {Services} from './servicesData'
-
 import {ChevronRightIcon} from '@heroicons/react/solid'
+import Scroll from 'react-scroll'
+
+const Element = Scroll.Element
+
 const ourServices = () => {
   return (
-    <div className='custom-container'>
+    <div id='service-section' className='custom-container'>
       <div className='flex flex-col md:flex-row'>
         <div className='flex-1 services-icons'>
           <div
