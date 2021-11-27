@@ -3,6 +3,7 @@ import {ChevronRightIcon} from '@heroicons/react/solid'
 const PortfolioOne = () => {
   return (
     <div
+      id='portfolio-section'
       className='w-full'
       style={{
         backgroundImage: 'url(/portfolio-one-bg.png)',

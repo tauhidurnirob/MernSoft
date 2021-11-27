@@ -4,6 +4,7 @@ const ContactUs = () => {
   const [value, onChange] = useState(20)
   return (
     <div
+      id='contactUs-section'
       className='relative'
       style={{
         backgroundImage: 'url(/contactUs-bg.png)',

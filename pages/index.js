@@ -16,6 +16,12 @@ const OurServices = dynamic(
     ssr: false
   }
 )
+const LangToolSection = dynamic(
+  () => import('../components/about/howWeWork/LangToolSection'),
+  {
+    ssr: false
+  }
+)
 const PortfolioOne = dynamic(
   () => import('../components/homepage/PortfolioOne'),
   {
@@ -79,6 +85,7 @@ export default function Home() {
 
       <HeroSection />
       <OurServices />
+      <LangToolSection />
       <PortfolioOne />
       <Benefit />
       <PortfolioTwo />

@@ -5,7 +5,7 @@ const LangToolSection = () => {
   const [active, setActive] = useState('FirstCard')
 
   return (
-    <div className='custom-container'>
+    <div id='langTool-section' className='custom-container'>
       <h1 className='title text-center'>Languages, tools and frameworks</h1>
       <p className='custom-paragraph mt-5 text-center'>
         Whatever the field or platform, we make it happen
