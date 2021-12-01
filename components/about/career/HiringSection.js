@@ -2,7 +2,7 @@ import React from 'react'
 import {HiringDataOne, HiringDataTwo} from './HiringSectionData'
 const HiringSection = () => {
   return (
-    <div className='my-10'>
+    <div id='hiring-section' className='my-10'>
       <div className='custom-container'>
         <h1 className='title text-center'>We’re Hiring!</h1>
         <p className='custom-paragraph text-center pt-5'>

@@ -1,6 +1,8 @@
 import React from 'react'
 import {CheckIcon, ChevronRightIcon} from '@heroicons/react/solid'
+import Scroll, {animateScroll as scroll} from 'react-scroll'
 const successFactor = () => {
+  const Link = Scroll.Link
   return (
     <div className='custom-container'>
       <h1 className='title text-center'>
@@ -20,32 +22,34 @@ const successFactor = () => {
           </p>
           <div className='factors my-10'>
             <li className='list-none flex text-secondary font-bold my-5'>
-              <CheckIcon className='heroIcon' />
+              <CheckIcon className='heroIcon mr-3' />
               Data Driven Decision Making
             </li>
             <li className='list-none flex text-secondary font-bold my-5'>
-              <CheckIcon className='heroIcon' />
+              <CheckIcon className='heroIcon mr-3' />
               User centric Approach
             </li>
             <li className='list-none flex text-secondary font-bold my-5'>
-              <CheckIcon className='heroIcon' />
+              <CheckIcon className='heroIcon mr-3' />
               Agile processes
             </li>
             <li className='list-none flex text-secondary font-bold my-5'>
-              <CheckIcon className='heroIcon' />
+              <CheckIcon className='heroIcon mr-3' />
               Adoption of the latest technologies
             </li>
             <li className='list-none flex text-secondary font-bold my-5'>
-              <CheckIcon className='heroIcon' />
+              <CheckIcon className='heroIcon mr-3' />
               Lean operations, but heavy R&D
             </li>
           </div>
-          <div className='call-to-action inline-flex font-bold mb-10'>
-            <a className='flex' href='#'>
-              Request an estimate
-              <ChevronRightIcon className='heroIcon ml-3 border-white' />
-            </a>
-          </div>
+          <Link
+            className='call-to-action font-bold inline-flex cursor-pointer my-10'
+            to='contactUs-section'
+            smooth={true}
+            duration={1000}>
+            Request An Estimate
+            <ChevronRightIcon className='heroIcon ml-3 border-white' />
+          </Link>
         </div>
         <div className='flex-1 m-auto'>
           <img src='/successFactorsChart.png' alt='icon' />

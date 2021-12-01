@@ -1,7 +1,29 @@
 import React, {useState, useEffect} from 'react'
 import {ChevronRightIcon, PhoneIcon, MailIcon} from '@heroicons/react/solid'
+import emailjs from 'emailjs-com'
 const ContactUs = () => {
   const [value, onChange] = useState(20)
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'gmail',
+        'template_3y5bkop',
+        e.target,
+        'user_0T6wFOexOIYlKLhKKeSGX'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+    e.target.reset()
+  }
   return (
     <div
       id='contactUs-section'
@@ -37,12 +59,13 @@ const ContactUs = () => {
             </div>
           </div>
           <div className='flex-1 my-auto mr-0 sm:ml-10'>
-            <form action='' className=''>
+            <form onSubmit={sendEmail}>
               <div className='my-10 pt-0'>
                 <input
                   type='text'
                   placeholder='Full Name'
                   className='contactUs-input'
+                  name='name'
                 />
               </div>
               <div className='my-10 pt-0'>
@@ -50,6 +73,7 @@ const ContactUs = () => {
                   type='text'
                   placeholder='Email Address'
                   className='contactUs-input'
+                  name='email'
                 />
               </div>
               <div className='my-10 pt-0'>
@@ -57,6 +81,7 @@ const ContactUs = () => {
                   type='number'
                   placeholder='Phone Number'
                   className='contactUs-input'
+                  name='phone'
                 />
               </div>
               <div className='my-10 pt-0'>
@@ -78,6 +103,7 @@ const ContactUs = () => {
                     onChange={({target: {value: radius}}) => {
                       onChange(radius)
                     }}
+                    name='radius'
                   />
                   <datalist id='newlist'>
                     <option key={1} />
@@ -97,14 +123,12 @@ const ContactUs = () => {
                   className='contactUs-input'></textarea>
               </div>
               <div className='my-10 pt-0'>
-                <a
-                  className='flex justify-center bg-secondary text-white rounded-full px-12 mx-14 py-3 text-lg font-bold'
-                  href='#'>
+                <a className='flex justify-center bg-secondary text-white rounded-full px-12 mx-14 py-3 text-lg font-bold cursor-pointer'>
                   <input
-                    className='bg-secondary'
+                    className='bg-secondary cursor-pointer'
                     type='submit'
                     value='Submit'
-                    name='name'
+                    name='submit'
                   />
                   <ChevronRightIcon className='w-5 ml-3 my-auto bg-white text-secondary rounded-full   border-2 border-secondary' />
                 </a>

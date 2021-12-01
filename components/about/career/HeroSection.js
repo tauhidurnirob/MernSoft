@@ -1,6 +1,7 @@
 import React from 'react'
-
+import Scroll, {animateScroll as scroll} from 'react-scroll'
 const HeroSection = () => {
+  const Link = Scroll.Link
   return (
     <div className='custom-container'>
       <div className='flex flex-col md:flex-row'>
@@ -12,9 +13,13 @@ const HeroSection = () => {
           </h1>
 
           <div className='flex py-5'>
-            <a className='underline text-primary' href='#'>
+            <Link
+              className='underline text-primary cursor-pointer'
+              to='hiring-section'
+              smooth={true}
+              duration={1000}>
               View Current Openings
-            </a>
+            </Link>
           </div>
         </div>
         <div className='flex-1 pl-10 py-10'>

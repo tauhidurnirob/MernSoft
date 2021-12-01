@@ -1,6 +1,8 @@
 import React from 'react'
 import {ChevronRightIcon} from '@heroicons/react/solid'
+import Scroll, {animateScroll as scroll} from 'react-scroll'
 const OurJourney = () => {
+  const Link = Scroll.Link
   return (
     <div className='custom-container'>
       <div className='flex flex-col md:flex-row'>
@@ -12,12 +14,16 @@ const OurJourney = () => {
             Our journey Ups & <br />
             Downs in the <span className='text-primary'>industry</span>
           </h1>
-          <div className='call-to-action inline-flex font-bold my-10'>
-            <a className='flex' href='#'>
-              Schedule A Free Consultation
-              <ChevronRightIcon className='heroIcon ml-3 border-white' />
-            </a>
-          </div>
+
+          <Link
+            className='call-to-action font-bold inline-flex cursor-pointer my-10'
+            to='contactUs-section'
+            smooth={true}
+            duration={1000}>
+            Schedule A Free Consultation
+            <ChevronRightIcon className='heroIcon ml-3 border-white' />
+          </Link>
+
           <p className='custom-paragraph'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna fringilla urna,

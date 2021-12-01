@@ -28,6 +28,9 @@ const LangTooSection = dynamic(
     ssr: false
   }
 )
+const Blog = dynamic(() => import('../components/homepage/Blog'), {
+  ssr: false
+})
 const ContactUs = dynamic(() => import('../components/ContactUs'), {
   ssr: false
 })
@@ -43,6 +46,7 @@ const ourCompany = () => {
       <WeDesignSection />
       <ProductDevelopmentCycle />
       <LangTooSection />
+      <Blog />
       <ContactUs />
       <Footer />
     </div>

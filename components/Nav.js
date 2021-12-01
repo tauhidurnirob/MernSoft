@@ -32,7 +32,7 @@ const Nav = () => {
               <h1
                 className='text-3xl font-bold'
                 onClick={() => scroll.scrollToTop()}>
-                <Link to='/'>MernSoft</Link>
+                <Links href='/'>MernSoft</Links>
               </h1>
             </div>
             <div className='flex items-center my-auto'>
@@ -165,16 +165,16 @@ const Nav = () => {
             <div className='md:hidden mb-10' id='mobile-menu'>
               <div
                 ref={ref}
-                className='px-2 pt-2 pb-3 space-y-1 sm:px-3 font-bold'>
-                <ul className='absolute top-15 left-0 bg-white w-full h-screen px-5 z-50 overflow-hidden'>
+                className='w-full h-full  space-y-1 sm:px-3 font-bold'>
+                <ul className='absolute top-15 left-0 bg-white w-full px-5 pb-10 z-50 overflow-hidden'>
                   <Link href='#'>
                     <a className='dropdown flex justify-between hover:text-primary px-3 py-2 text-base'>
                       About
                       <img src='/icons/navicon.png' alt='icon' />
                       <ul className='dropdown-menu hidden absolute top-15 my-8 w-11/12 rounded-lg shadow-default bg-white pt-2'>
                         <li>
-                          <Link href='/ourCompany'>
-                            <a className='flex  text-secondary py-4 px-6  whitespace-no-wrap'>
+                          <Links href='/ourCompany'>
+                            <a className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
                               <img
                                 className='mr-2'
                                 src='/navIcon/people.png'
@@ -182,10 +182,10 @@ const Nav = () => {
                               />
                               Our Company
                             </a>
-                          </Link>
+                          </Links>
                         </li>
                         <li>
-                          <Link href='/howWeWork'>
+                          <Links href='/howWeWork'>
                             <a className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
                               <img
                                 className='mr-2'
@@ -194,10 +194,10 @@ const Nav = () => {
                               />
                               How We Work
                             </a>
-                          </Link>
+                          </Links>
                         </li>
                         <li>
-                          <Link href='/career'>
+                          <Links href='/career'>
                             <a className='flex text-secondary py-4 px-6  whitespace-no-wrap'>
                               <img
                                 className='mr-2'
@@ -206,36 +206,56 @@ const Nav = () => {
                               />
                               Career
                             </a>
-                          </Link>
+                          </Links>
                         </li>
                       </ul>
                     </a>
                   </Link>
 
-                  <Link href='#service-section'>
+                  <Link
+                    to='service-section'
+                    smooth={true}
+                    duration={1000}
+                    className='cursor-pointer'>
                     <a className=' hover:text-primary block px-3 py-2'>
                       Services
                     </a>
                   </Link>
 
-                  <Link href='#langTool-section'>
+                  <Link
+                    to='langTool-section'
+                    smooth={true}
+                    duration={1000}
+                    className='cursor-pointer'>
                     <a className='hover:text-primary block px-3 py-2'>
                       Technologies
                     </a>
                   </Link>
 
-                  <Link href='#portfolio-section'>
+                  <Link
+                    to='portfolio-section'
+                    smooth={true}
+                    duration={1000}
+                    className='cursor-pointer'>
                     <a className='dropdown flex justify-between hover:text-primary  px-3 py-2'>
                       Portfolio
                     </a>
                   </Link>
-                  <Link href='#blog-section'>
+                  <Link
+                    to='blog-section'
+                    smooth={true}
+                    duration={1000}
+                    className='cursor-pointer'>
                     <a className='hover:text-primary block px-3 pt-2 pb-6'>
                       Blog
                     </a>
                   </Link>
 
-                  <Link href='#contactUs-section'>
+                  <Link
+                    to='contactUs-section'
+                    smooth={true}
+                    duration={1000}
+                    className='cursor-pointer'>
                     <a className='call-to-action'>Contact Us</a>
                   </Link>
                 </ul>
