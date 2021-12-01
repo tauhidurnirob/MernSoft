@@ -46,6 +46,9 @@ const ImageGallery = dynamic(
     ssr: false
   }
 )
+const Blog = dynamic(() => import('../components/homepage/Blog'), {
+  ssr: false
+})
 const ContactUs = dynamic(() => import('../components/ContactUs'), {
   ssr: false
 })
@@ -64,6 +67,7 @@ const ourCompany = () => {
       <OurDevProcess />
       <FreqAskQuestion />
       <ImageGallery />
+      <Blog />
       <ContactUs />
       <Footer />
     </div>

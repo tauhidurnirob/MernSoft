@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Scroll, {animateScroll as scroll} from 'react-scroll'
 const OurDevProcess = () => {
   return (
     <div className='custom-container'>
