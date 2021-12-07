@@ -23,6 +23,7 @@ const HeroSection = () => {
             <Link
               className='call-to-action font-bold cursor-pointer'
               to='contactUs-section'
+              offset={-200}
               smooth={true}
               duration={1000}>
               Schedule A Free Consultation

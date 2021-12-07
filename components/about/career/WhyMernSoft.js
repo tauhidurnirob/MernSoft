@@ -6,7 +6,6 @@ const WhyMernSoft = () => {
       <div className='custom-container'>
         <div className='flex flex-col md:flex-row'>
           <div className='flex-1'>
-            f
             <div className='lg:w-2/3 w-3/3 m-auto'>
               <h1 className='title text-center'>
                 Why <span className='text-primary'>MernSoft?</span>

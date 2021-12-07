@@ -89,6 +89,7 @@ const Nav = () => {
                     <Link
                       className='hover:text-primary px-2 py-2 cursor-pointer'
                       to='service-section'
+                      offset={-200}
                       smooth={true}
                       duration={1000}>
                       Services
@@ -98,6 +99,7 @@ const Nav = () => {
                     <Link
                       className='hover:text-primary px-2 py-2 cursor-pointer'
                       to='langTool-section'
+                      offset={-200}
                       smooth={true}
                       duration={1000}>
                       Technologies
@@ -108,6 +110,7 @@ const Nav = () => {
                     <Link
                       className='hover:text-primary px-2 py-2 cursor-pointer '
                       to='portfolio-section'
+                      offset={-200}
                       smooth={true}
                       duration={1000}>
                       Portfolio
@@ -117,6 +120,7 @@ const Nav = () => {
                     <Link
                       className='hover:text-primary px-2 py-2 cursor-pointer'
                       to='blog-section'
+                      offset={-200}
                       smooth={true}
                       duration={1000}>
                       Blog
@@ -127,6 +131,7 @@ const Nav = () => {
                     <Link
                       className='call-to-action'
                       to='contactUs-section'
+                      offset={-200}
                       smooth={true}
                       duration={1000}>
                       Contact Us
@@ -214,6 +219,7 @@ const Nav = () => {
 
                   <Link
                     to='service-section'
+                    offset={-200}
                     smooth={true}
                     duration={1000}
                     className='cursor-pointer'>
@@ -224,6 +230,7 @@ const Nav = () => {
 
                   <Link
                     to='langTool-section'
+                    offset={-200}
                     smooth={true}
                     duration={1000}
                     className='cursor-pointer'>
@@ -234,6 +241,7 @@ const Nav = () => {
 
                   <Link
                     to='portfolio-section'
+                    offset={-200}
                     smooth={true}
                     duration={1000}
                     className='cursor-pointer'>
@@ -243,6 +251,7 @@ const Nav = () => {
                   </Link>
                   <Link
                     to='blog-section'
+                    offset={-200}
                     smooth={true}
                     duration={1000}
                     className='cursor-pointer'>
@@ -253,6 +262,7 @@ const Nav = () => {
 
                   <Link
                     to='contactUs-section'
+                    offset={-200}
                     smooth={true}
                     duration={1000}
                     className='cursor-pointer'>
