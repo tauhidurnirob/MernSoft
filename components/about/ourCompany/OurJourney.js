@@ -19,6 +19,7 @@ const OurJourney = () => {
             className='call-to-action font-bold inline-flex cursor-pointer my-10'
             to='contactUs-section'
             smooth={true}
+            offset={-200}
             duration={1000}>
             Schedule A Free Consultation
             <ChevronRightIcon className='heroIcon ml-3 border-white' />

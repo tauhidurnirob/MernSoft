@@ -16,6 +16,7 @@ const HeroSection = () => {
             <Link
               className='underline text-primary cursor-pointer'
               to='hiring-section'
+              offset={-200}
               smooth={true}
               duration={1000}>
               View Current Openings

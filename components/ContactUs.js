@@ -1,29 +1,28 @@
 import React, {useState, useEffect} from 'react'
 import {ChevronRightIcon, PhoneIcon, MailIcon} from '@heroicons/react/solid'
 import emailjs from 'emailjs-com'
+
 const ContactUs = () => {
   const [value, onChange] = useState(20)
 
-  const sendEmail = (e) => {
+  function sendEmail(e, data) {
     e.preventDefault()
-
     emailjs
       .sendForm(
-        'gmail',
-        'template_3y5bkop',
+        'service_6yunhqk',
+        'template_wy23h1o',
         e.target,
         'user_0T6wFOexOIYlKLhKKeSGX'
       )
-      .then(
-        (result) => {
-          console.log(result.text)
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
-    e.target.reset()
+      .then((res) => {
+        console.log(res)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    console.log(data)
   }
+
   return (
     <div
       id='contactUs-section'
@@ -44,9 +43,9 @@ const ContactUs = () => {
             <h1 className='text-3xl text-secondary my-10'>
               Got an{' '}
               <span className='text-primary'>
-                amazing business <br /> idea
+                amazing business <br /> idea ?
               </span>{' '}
-              ? Let's bring it to the <br /> market together.
+              Let's bring it to the <br /> market together.
             </h1>
             <h1 className='text-3xl text-secondary'>Get in Touch With us!</h1>
             <div className='info mt-14'>
@@ -59,13 +58,14 @@ const ContactUs = () => {
             </div>
           </div>
           <div className='flex-1 my-auto mr-0 sm:ml-10'>
-            <form onSubmit={sendEmail}>
+            <form onSubmit={sendEmail} id='contact-form'>
               <div className='my-10 pt-0'>
                 <input
                   type='text'
                   placeholder='Full Name'
                   className='contactUs-input'
                   name='name'
+                  required
                 />
               </div>
               <div className='my-10 pt-0'>
@@ -73,7 +73,8 @@ const ContactUs = () => {
                   type='text'
                   placeholder='Email Address'
                   className='contactUs-input'
-                  name='email'
+                  name='user_email'
+                  required
                 />
               </div>
               <div className='my-10 pt-0'>
@@ -104,6 +105,7 @@ const ContactUs = () => {
                       onChange(radius)
                     }}
                     name='radius'
+                    required
                   />
                   <datalist id='newlist'>
                     <option key={1} />
@@ -120,18 +122,19 @@ const ContactUs = () => {
                 <textarea
                   type='text'
                   placeholder='Project Description'
-                  className='contactUs-input'></textarea>
+                  className='contactUs-input'
+                  name='project_description'
+                  required
+                />
               </div>
-              <div className='my-10 pt-0'>
-                <a className='flex justify-center bg-secondary text-white rounded-full px-12 mx-14 py-3 text-lg font-bold cursor-pointer'>
-                  <input
-                    className='bg-secondary cursor-pointer'
-                    type='submit'
-                    value='Submit'
-                    name='submit'
-                  />
-                  <ChevronRightIcon className='w-5 ml-3 my-auto bg-white text-secondary rounded-full   border-2 border-secondary' />
-                </a>
+              <div className='flex bg-secondary text-white justify-center rounded-full px-12 mx-14 my-10 pt-0'>
+                <input
+                  className='py-3 bg-secondary text-lg font-bold cursor-pointer'
+                  type='submit'
+                  value='Submit'
+                  name='submit'
+                />{' '}
+                <ChevronRightIcon className='w-5 ml-3 my-auto bg-white text-secondary rounded-full   border-2 border-secondary' />
               </div>
             </form>
           </div>
