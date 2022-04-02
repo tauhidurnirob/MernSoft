@@ -2,101 +2,103 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
 const Nav = dynamic(() => import('../components/Nav'), {
-  ssr: false
+    ssr: false,
 })
 const HeroSection = dynamic(
-  () => import('../components/homepage/HeroSection'),
-  {
-    ssr: false
-  }
+    () => import('../components/homepage/HeroSection'),
+    {
+        ssr: false,
+    }
 )
 const OurServices = dynamic(
-  () => import('../components/homepage/OurServices'),
-  {
-    ssr: false
-  }
+    () => import('../components/homepage/OurServices'),
+    {
+        ssr: false,
+    }
 )
 const LangToolSection = dynamic(
-  () => import('../components/about/howWeWork/LangToolSection'),
-  {
-    ssr: false
-  }
+    () => import('../components/about/howWeWork/LangToolSection'),
+    {
+        ssr: false,
+    }
 )
 const PortfolioOne = dynamic(
-  () => import('../components/homepage/PortfolioOne'),
-  {
-    ssr: false
-  }
+    () => import('../components/homepage/PortfolioOne'),
+    {
+        ssr: false,
+    }
 )
 const Benefit = dynamic(() => import('../components/homepage/BenefitSection'), {
-  ssr: false
+    ssr: false,
 })
 const PortfolioTwo = dynamic(
-  () => import('../components/homepage/PortfolioTwo'),
-  {
-    ssr: false
-  }
+    () => import('../components/homepage/PortfolioTwo'),
+    {
+        ssr: false,
+    }
 )
 const DevelopmentProcess = dynamic(
-  () => import('../components/homepage/DevelopmentProcess'),
-  {
-    ssr: false
-  }
+    () => import('../components/homepage/DevelopmentProcess'),
+    {
+        ssr: false,
+    }
 )
 const ClientsReview = dynamic(
-  () => import('../components/homepage/ClientsReview'),
-  {
-    ssr: false
-  }
+    () => import('../components/homepage/ClientsReview'),
+    {
+        ssr: false,
+    }
 )
 const ClientsLogo = dynamic(
-  () => import('../components/homepage/ClientsLogo'),
-  {
-    ssr: false
-  }
+    () => import('../components/homepage/ClientsLogo'),
+    {
+        ssr: false,
+    }
 )
 const Solution = dynamic(
-  () => import('../components/homepage/SolutionSection'),
-  {
-    ssr: false
-  }
+    () => import('../components/homepage/SolutionSection'),
+    {
+        ssr: false,
+    }
 )
 const Blog = dynamic(() => import('../components/homepage/Blog'), {
-  ssr: false
+    ssr: false,
 })
 
 const ContactUs = dynamic(() => import('../components/ContactUs'), {
-  ssr: false
+    ssr: false,
 })
 const Footer = dynamic(() => import('../components/Footer'), {
-  ssr: false
+    ssr: false,
 })
 export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>MernSoft | App Development Company in Dhaka, Bangladesh</title>
-        <meta
-          name='description'
-          content='App Development Company in Dhaka, Bangladesh'
-        />
-      </Head>
-      <Nav />
+    return (
+        <div>
+            <Head>
+                <title>
+                    MernSoft | App Development Company in Dhaka, Bangladesh
+                </title>
+                <meta
+                    name='description'
+                    content='App Development Company in Dhaka, Bangladesh'
+                />
+                <link rel='shortcut icon' href='./favicon.png' />
+            </Head>
+            <Nav />
+            <HeroSection />
+            <OurServices />
+            <LangToolSection />
+            <PortfolioOne />
+            <Benefit />
+            <PortfolioTwo />
+            <DevelopmentProcess />
+            <ClientsReview />
+            <ClientsLogo />
+            <Solution />
+            <Blog />
 
-      <HeroSection />
-      <OurServices />
-      <LangToolSection />
-      <PortfolioOne />
-      <Benefit />
-      <PortfolioTwo />
-      <DevelopmentProcess />
-      <ClientsReview />
-      <ClientsLogo />
-      <Solution />
-      <Blog />
-
-      <ContactUs />
-      <Footer />
-    </div>
-  )
+            <ContactUs />
+            <Footer />
+        </div>
+    )
 }

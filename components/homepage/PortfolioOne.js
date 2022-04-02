@@ -1,40 +1,52 @@
 import React from 'react'
-import {ChevronRightIcon} from '@heroicons/react/solid'
+import Link from 'next/link'
+import Image from 'next/image'
+import { ChevronRightIcon } from '@heroicons/react/solid'
+
+import mockUpOne from '../../public/portfolio-one-mock-ups.png'
 const PortfolioOne = () => {
-  return (
-    <div
-      id='portfolio-section'
-      className='w-full'
-      style={{
-        backgroundImage: 'url(/portfolio-one-bg.png)',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover'
-      }}>
-      <div className='flex flex-col md:flex-row custom-container'>
-        <div className='flex-1 md:my-auto my-10'>
-          <div className='our-portfolio py-5'>
-            <span className='title border-2 text-primary border-primary rounded-full px-5 py-3'>
-              Our Portfolio
-            </span>
-          </div>
-          <h1 className='text-secondary font-bold text-3xl py-5'>Helix-d</h1>
-          <p className='text-paragraphColor font-bold py-5'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            temporibus. Quod minima non aliquam, nobis quibusdam earum odit
-            impedit nemo?
-          </p>
-          <a href='#' className='flex text-lg font-bold text-primary'>
-            Live Demo
-            <ChevronRightIcon className='w-5 h-5s ml-3 my-auto bg-primary text-white rounded-full   border-2 border-primary' />
-          </a>
+    return (
+        <div
+            id='portfolio-section'
+            className='w-full'
+            style={{
+                backgroundImage: 'url(/portfolio-one-bg.png)',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+            }}>
+            <div className='flex flex-col md:flex-row custom-container'>
+                <div className='flex-1 md:my-auto my-10'>
+                    <div className='our-portfolio py-5'>
+                        <span className='title border-2 text-primary border-primary rounded-full px-5 py-3'>
+                            Our Portfolio
+                        </span>
+                    </div>
+                    <h1 className='text-secondary font-bold text-3xl py-5'>
+                        Lead Chat
+                    </h1>
+                    <p className='text-paragraphColor font-bold py-5'>
+                        This is a full-fledged Firebase Chat Application. With
+                        social authentication including Google and Facebook
+                        using Firebase, online statuses, great design, and
+                        functionality, image support, sound notifications, the
+                        ability to create multiple rooms, and much more.
+                    </p>
+                    <Link href='https://leadchat.netlify.app/'>
+                        <a
+                            target='_blank'
+                            className='flex text-lg font-bold text-primary'>
+                            Live Demo
+                            <ChevronRightIcon className='w-5 h-5s ml-3 my-auto bg-primary text-white rounded-full   border-2 border-primary' />
+                        </a>
+                    </Link>
+                </div>
+                <div className='flex-1 mx-auto'>
+                    <Image className='w-auto' src={mockUpOne} alt='img' />
+                </div>
+            </div>
         </div>
-        <div className='flex-1 mx-auto'>
-          <img className='w-auto' src='/mock-ups.png' alt='img' />
-        </div>
-      </div>
-    </div>
-  )
+    )
 }
 
 export default PortfolioOne
