@@ -1,18 +1,22 @@
 import React from 'react'
+import Image from 'next/image'
 
+import blogOne from '../../public/blogImage/blog-one.png'
+import blogTwo from '../../public/blogImage/blog-two.png'
+import blogThree from '../../public/blogImage/blog-three.png'
 const Blog = () => {
     return (
         <div id='blog-section' className='custom-container'>
             <div className='flex flex-col-reverse sm:flex-row'>
                 <div className='flex-1 sm:mt-32 mt-0'>
-                    <img src='/blogImage/blog-one.png' alt='img' />
+                    <Image src={blogOne} alt='img' />
                     <div className='blog-details mt-10'>
                         <h1 className='text-secondary font-semibold text-3xl mt-5'>
                             Role of Banking and <br /> FinTech APIs
                         </h1>
                         <p className='text-paragraphColor font-bold my-5'>
                             API banking refers to a set of protocols that makes
-                            a bank's services available to other third-party
+                            a {"bank's"} services available to other third-party
                             companies via APIs. This helps both bank and Fintech
                             to augment their complementary specialties and
                             offerings more than they can provide to their
@@ -26,7 +30,7 @@ const Blog = () => {
                     </div>
                 </div>
                 <div className='flex-1 sm:m-10 sm:mt-52 my-10'>
-                    <img src='/blogImage/blog-two.png' alt='img' />
+                    <Image src={blogTwo} alt='img' />
                     <div className='blog-details mt-10'>
                         <h1 className='text-secondary font-semibold text-3xl mt-5'>
                             Common Issues Faced <br /> By Developers
@@ -59,7 +63,7 @@ const Blog = () => {
                             technological insights that are sure to amaze you.
                         </p>
                     </div>
-                    <img src='/blogImage/blog-three.png' alt='img' />
+                    <Image src={blogThree} alt='img' />
                     <div className='blog-details mt-10'>
                         <h1 className='text-secondary font-semibold text-3xl mt-5'>
                             Your Absolute Guide To <br /> API Development
