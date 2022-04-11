@@ -1,6 +1,9 @@
 import React from 'react'
 import { CheckIcon, ChevronRightIcon } from '@heroicons/react/solid'
 import Scroll, { animateScroll as scroll } from 'react-scroll'
+import Image from 'next/image'
+import successFactorImage from '../../../public/successFactorsChart.png'
+
 const successFactor = () => {
     const Link = Scroll.Link
     return (
@@ -51,7 +54,7 @@ const successFactor = () => {
                     </Link>
                 </div>
                 <div className='flex-1 m-auto'>
-                    <img src='/successFactorsChart.png' alt='icon' />
+                    <Image src={successFactorImage} alt='img' />
                 </div>
             </div>
         </div>

@@ -1,7 +1,14 @@
 import React from 'react'
+import Image from 'next/image'
 import { Services } from './servicesData'
 import { ChevronRightIcon } from '@heroicons/react/solid'
 import Scroll from 'react-scroll'
+
+import serviceOne from '../../public/servicesIcons/colorMode.png'
+import serviceTwo from '../../public/servicesIcons/webDevelopment.png'
+import serviceThree from '../../public/servicesIcons/androidDevelopment.png'
+import serviceFour from '../../public/servicesIcons/iosDevelopment.png'
+import topNotchService from '../../public/top-notch-service.png'
 
 const Element = Scroll.Element
 
@@ -21,11 +28,9 @@ const ourServices = () => {
                             <div className='flex-1'>
                                 {' '}
                                 <div className='icon-card'>
-                                    <img
-                                        className='icon-card-image'
-                                        src='/servicesIcons/colorMode.png'
-                                        alt='icon'
-                                    />
+                                    <div className='icon-card-image'>
+                                        <Image src={serviceOne} alt='icon' />
+                                    </div>
 
                                     <h1 className='icon-card-title'>
                                         UI / UX <br />
@@ -33,11 +38,9 @@ const ourServices = () => {
                                     </h1>
                                 </div>
                                 <div className='icon-card'>
-                                    <img
-                                        className='icon-card-image'
-                                        src='/servicesIcons/webDevelopment.png'
-                                        alt='icon'
-                                    />
+                                    <div className='icon-card-image'>
+                                        <Image src={serviceTwo} alt='icon' />
+                                    </div>
 
                                     <h1 className='icon-card-title'>
                                         Web <br />
@@ -47,11 +50,9 @@ const ourServices = () => {
                             </div>
                             <div className='flex-1 md:mt-24 mt-0'>
                                 <div className='icon-card'>
-                                    <img
-                                        className='icon-card-image'
-                                        src='/servicesIcons/androidDevelopment.png'
-                                        alt='icon'
-                                    />
+                                    <div className='icon-card-image'>
+                                        <Image src={serviceThree} alt='icon' />
+                                    </div>
 
                                     <h1 className='icon-card-title'>
                                         Android <br />
@@ -59,11 +60,9 @@ const ourServices = () => {
                                     </h1>
                                 </div>
                                 <div className='icon-card'>
-                                    <img
-                                        className='icon-card-image '
-                                        src='/servicesIcons/iosDevelopment.png'
-                                        alt='icon'
-                                    />
+                                    <div className='icon-card-image'>
+                                        <Image src={serviceFour} alt='icon' />
+                                    </div>
 
                                     <h1 className='icon-card-title'>
                                         ios <br />
@@ -102,18 +101,21 @@ const ourServices = () => {
                                 </span>{' '}
                                 services
                             </h1>
-                            <img src='/top-notch-service.png' alt='img' />
+                            <Image src={topNotchService} alt='img' />
                         </div>
                         <div className='flex-1 mt-10'>
                             {Services.map((service) => (
                                 <div
                                     className='flex shadow-default bg-white   lg:p-8 sm:p-5 p-3 lg:m-8 sm:m-5 m-3 rounded-3xl '
                                     key={service.id}>
-                                    <img
-                                        className='w-16'
-                                        src={service.imageUrl}
-                                        alt='img'
-                                    />
+                                    <div>
+                                        <Image
+                                            src={service.imageUrl}
+                                            alt='img'
+                                            width='100'
+                                            height='100'
+                                        />
+                                    </div>
                                     <div className='service-details ml-3 sm:ml-5'>
                                         <h1 className='text-lg font-bold text-secondary'>
                                             {service.title}

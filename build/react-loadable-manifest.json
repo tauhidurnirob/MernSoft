@@ -1,0 +1,303 @@
+{
+  "career.js -> ../components/ContactUs": {
+    "id": 5843,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/843.147b58105d9e1bdedb80.js"
+    ]
+  },
+  "career.js -> ../components/Footer": {
+    "id": 1362,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/362.5ff30dc80d0fff353657.js"
+    ]
+  },
+  "career.js -> ../components/Nav": {
+    "id": 9033,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/33.fc0a0d572be9e2f992b5.js"
+    ]
+  },
+  "career.js -> ../components/homepage/Blog": {
+    "id": 8223,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/223.44050f76604c56af6f61.js"
+    ]
+  },
+  "career.js -> /components/about/career/CareerDestination": {
+    "id": 2567,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/567.271f0ad154b8a089c249.js"
+    ]
+  },
+  "career.js -> /components/about/career/HeroSection": {
+    "id": 7762,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/762.4fa06cbc674d35255fc1.js"
+    ]
+  },
+  "career.js -> /components/about/career/HiringSection": {
+    "id": 2498,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/498.b15e92057589c42ef5e8.js"
+    ]
+  },
+  "career.js -> /components/about/career/WhyMernSoft": {
+    "id": 7031,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/31.52413471305b734dc483.js"
+    ]
+  },
+  "howWeWork.js -> ../components/ContactUs": {
+    "id": 5843,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/843.147b58105d9e1bdedb80.js"
+    ]
+  },
+  "howWeWork.js -> ../components/Footer": {
+    "id": 1362,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/362.5ff30dc80d0fff353657.js"
+    ]
+  },
+  "howWeWork.js -> ../components/Nav": {
+    "id": 9033,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/33.fc0a0d572be9e2f992b5.js"
+    ]
+  },
+  "howWeWork.js -> ../components/homepage/Blog": {
+    "id": 8223,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/223.44050f76604c56af6f61.js"
+    ]
+  },
+  "howWeWork.js -> /components/about/howWeWork/HeroSection": {
+    "id": 4729,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/729.742d523b52de962a35fb.js"
+    ]
+  },
+  "howWeWork.js -> /components/about/howWeWork/LangToolSection": {
+    "id": 4735,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/735.328b788278e4afa8dfe3.js"
+    ]
+  },
+  "howWeWork.js -> /components/about/howWeWork/ProductDevelopmentCycle": {
+    "id": 4418,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/418.3807fbdab0821f009e7e.js"
+    ]
+  },
+  "howWeWork.js -> /components/about/howWeWork/WeDesignSection": {
+    "id": 6820,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/416.102570aba85371968071.js"
+    ]
+  },
+  "index.js -> ../components/ContactUs": {
+    "id": 5843,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/843.147b58105d9e1bdedb80.js"
+    ]
+  },
+  "index.js -> ../components/Footer": {
+    "id": 1362,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/362.5ff30dc80d0fff353657.js"
+    ]
+  },
+  "index.js -> ../components/Nav": {
+    "id": 9033,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/33.fc0a0d572be9e2f992b5.js"
+    ]
+  },
+  "index.js -> ../components/about/howWeWork/LangToolSection": {
+    "id": 4735,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/735.328b788278e4afa8dfe3.js"
+    ]
+  },
+  "index.js -> ../components/homepage/BenefitSection": {
+    "id": 4883,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/883.5785c8af3dca706ec3f1.js"
+    ]
+  },
+  "index.js -> ../components/homepage/Blog": {
+    "id": 8223,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/223.44050f76604c56af6f61.js"
+    ]
+  },
+  "index.js -> ../components/homepage/ClientsLogo": {
+    "id": 260,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/959.14e0ce216fcef829f7f5.js",
+      "static/css/c8843280217d36ba4773.css",
+      "static/chunks/468.e53305f4c48206de7064.js"
+    ]
+  },
+  "index.js -> ../components/homepage/ClientsReview": {
+    "id": 9646,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/646.a9dbcf5194973c1111b1.js"
+    ]
+  },
+  "index.js -> ../components/homepage/DevelopmentProcess": {
+    "id": 2334,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/334.7a93e4cd4c5fb8c3ee0a.js"
+    ]
+  },
+  "index.js -> ../components/homepage/HeroSection": {
+    "id": 2758,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/758.df55dc3f0351a818ba0a.js"
+    ]
+  },
+  "index.js -> ../components/homepage/OurServices": {
+    "id": 1793,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/793.8c6e88ba3171dcd4765d.js"
+    ]
+  },
+  "index.js -> ../components/homepage/PortfolioOne": {
+    "id": 6229,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/229.0e4cafeb45aaaed22504.js"
+    ]
+  },
+  "index.js -> ../components/homepage/PortfolioTwo": {
+    "id": 3462,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/462.c1d69f0c8fce42261b69.js"
+    ]
+  },
+  "index.js -> ../components/homepage/SolutionSection": {
+    "id": 7100,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/100.129afc48fc059f391d14.js"
+    ]
+  },
+  "ourCompany.js -> ../components/ContactUs": {
+    "id": 5843,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/843.147b58105d9e1bdedb80.js"
+    ]
+  },
+  "ourCompany.js -> ../components/Footer": {
+    "id": 1362,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/362.5ff30dc80d0fff353657.js"
+    ]
+  },
+  "ourCompany.js -> ../components/Nav": {
+    "id": 9033,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/33.fc0a0d572be9e2f992b5.js"
+    ]
+  },
+  "ourCompany.js -> ../components/homepage/Blog": {
+    "id": 8223,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/223.44050f76604c56af6f61.js"
+    ]
+  },
+  "ourCompany.js -> /components/about/ourCompany/Achievements": {
+    "id": 9572,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/572.eeeef14ed1fe676712fc.js"
+    ]
+  },
+  "ourCompany.js -> /components/about/ourCompany/FreqAskQuestion": {
+    "id": 700,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/700.5f137e3d635f7ae81432.js"
+    ]
+  },
+  "ourCompany.js -> /components/about/ourCompany/HeroSection": {
+    "id": 6323,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/323.08e6e8d2482a2b71bf49.js"
+    ]
+  },
+  "ourCompany.js -> /components/about/ourCompany/ImageGallery": {
+    "id": 9760,
+    "files": [
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/760.f522329581fed2f841b9.js"
+    ]
+  },
+  "ourCompany.js -> /components/about/ourCompany/OurDevProcess": {
+    "id": 8885,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/885.93884d3e681dfdbacf6e.js"
+    ]
+  },
+  "ourCompany.js -> /components/about/ourCompany/OurJourney": {
+    "id": 5756,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/756.80bc1c1bac0a84ad6d86.js"
+    ]
+  },
+  "ourCompany.js -> /components/about/ourCompany/SuccessFactor": {
+    "id": 6790,
+    "files": [
+      "static/chunks/framework-1eefeb1ba225146588ca.js",
+      "static/chunks/commons.2b35933dfe1b66edd73e.js",
+      "static/chunks/790.99a85895e85092a48180.js"
+    ]
+  }
+}

@@ -1,5 +1,9 @@
 import React from 'react'
+import Image from 'next/image'
 import Scroll, { animateScroll as scroll } from 'react-scroll'
+
+import bannerImage from '../../public/banner-illiustration.svg'
+
 const HeroSection = () => {
     const Link = Scroll.Link
     return (
@@ -31,7 +35,7 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className='flex-1 pl-10 py-10'>
-                    <img src='/banner-illiustration.svg' alt='img' />
+                    <Image src={bannerImage} alt='img' />
                 </div>
             </div>
             <p></p>

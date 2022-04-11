@@ -1,5 +1,7 @@
 import React from 'react'
-
+import Image from 'next/image'
+import WhyMern from '../../../public/whyMernSoft.jpg'
+import companyShowcase from '../../../public/company-showcase.jpg'
 const WhyMernSoft = () => {
     return (
         <div>
@@ -25,10 +27,11 @@ const WhyMernSoft = () => {
                         </div>
                     </div>
                     <div className='flex-1'>
-                        <div className='m-5'>
-                            <img
-                                className='lg:w-2/3 w-3/3 m-auto'
-                                src='/whyMernSoft.jpg'
+                        <div className=' lg:w-2/3 w-3/3 m-auto'>
+                            <Image
+                                width='400'
+                                height='400'
+                                src={WhyMern}
                                 alt='img'
                             />
                         </div>
@@ -36,7 +39,7 @@ const WhyMernSoft = () => {
                 </div>
             </div>
             <div className='my-10'>
-                <img className='w-full' src='/company-showcase.jpg' alt='img' />
+                <Image className='w-full' src={companyShowcase} alt='img' />
             </div>
         </div>
     )

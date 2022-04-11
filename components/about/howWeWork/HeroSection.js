@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+import heroHowWeWork from '../../../public/hero-howWeWork.svg'
 import Scroll, { animateScroll as scroll } from 'react-scroll'
 const HeroSection = () => {
     const Link = Scroll.Link
@@ -22,11 +24,7 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className='flex-1 pl-10 py-10'>
-                    <img
-                        className='mx-auto'
-                        src='/hero-howWeWork.svg'
-                        alt='img'
-                    />
+                    <Image className='mx-auto' src={heroHowWeWork} alt='img' />
                 </div>
             </div>
             <p></p>

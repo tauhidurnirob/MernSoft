@@ -1,15 +1,17 @@
 import React from 'react'
 import { ChevronRightIcon } from '@heroicons/react/solid'
 import Scroll, { animateScroll as scroll } from 'react-scroll'
+import Image from 'next/image'
+import ourJourneyImage from '../../../public/ourJourney.jpg'
 const OurJourney = () => {
     const Link = Scroll.Link
     return (
         <div className='custom-container'>
             <div className='flex flex-col md:flex-row'>
                 <div className='flex-1'>
-                    <img
+                    <Image
                         className='my-auto mx-auto'
-                        src='/ourJourney.jpg'
+                        src={ourJourneyImage}
                         alt='img'
                     />
                 </div>

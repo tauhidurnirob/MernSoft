@@ -1,5 +1,11 @@
 import React from 'react'
-
+import Image from 'next/image'
+import productDevImage from '../../../public/product-development-cycle.svg'
+import stepOne from '../../../public/ProductDevelopmentImage/step-one.svg'
+import stepTwo from '../../../public/ProductDevelopmentImage/step-two.svg'
+import stepthree from '../../../public/ProductDevelopmentImage/step-three.svg'
+import stepfour from '../../../public/ProductDevelopmentImage/step-four.svg'
+import dots from '../../../public/ProductDevelopmentImage/dots-line.png'
 const ProductDevelopmentCycle = () => {
     return (
         <div className='custom-container my-10'>
@@ -7,21 +13,19 @@ const ProductDevelopmentCycle = () => {
                 Our Product <span className='text-primary'>Development</span>{' '}
                 Cycle
             </h1>
-            <img
-                className=' mx-auto'
-                src='/product-development-cycle.svg'
-                alt='img'
-            />
+            <div className='flex justify-center'>
+                <span className=''>
+                    <Image width='800' src={productDevImage} alt='img' />
+                </span>
+            </div>
 
             <div className='steps md:w-3/4 w-3/4 mx-auto my-14'>
                 {/* step-one */}
                 <div className='flex flex-col md:flex-row shadow-default rounded-2xl'>
                     <div className='flex-1 image'>
-                        <img
-                            className='mx-auto p-5'
-                            src='/ProductDevelopmentImage/step-one.svg'
-                            alt='img'
-                        />
+                        <div className='mx-auto p-5'>
+                            <Image src={stepOne} alt='img' />
+                        </div>
                     </div>
                     <div className='flex-1'>
                         <div className='flex'>
@@ -43,11 +47,9 @@ const ProductDevelopmentCycle = () => {
                         </div>
                     </div>
                 </div>
-                <img
-                    className='mx-auto my-5'
-                    src='/ProductDevelopmentImage/dots-line.png'
-                    alt='img'
-                />
+                <div className='flex justify-center my-5'>
+                    <Image src={dots} alt='img' />
+                </div>
                 {/* step-two */}
                 <div className='flex flex-col md:flex-row shadow-default rounded-2xl'>
                     <div className='flex-1 details'>
@@ -73,26 +75,20 @@ const ProductDevelopmentCycle = () => {
                         </div>
                     </div>
                     <div className='flex-1 image'>
-                        <img
-                            className='mx-auto p-5'
-                            src='/ProductDevelopmentImage/step-two.svg'
-                            alt='img'
-                        />
+                        <div className='mx-auto p-5'>
+                            <Image src={stepTwo} alt='img' />
+                        </div>
                     </div>
                 </div>
-                <img
-                    className='mx-auto my-5'
-                    src='/ProductDevelopmentImage/dots-line.png'
-                    alt='img'
-                />
+                <div className='flex justify-center my-5'>
+                    <Image src={dots} alt='img' />
+                </div>
                 {/* step-three */}
                 <div className='flex flex-col md:flex-row shadow-default rounded-2xl'>
                     <div className='flex-1 image'>
-                        <img
-                            className='mx-auto p-5'
-                            src='/ProductDevelopmentImage/step-three.svg'
-                            alt='img'
-                        />
+                        <div className='mx-auto p-5'>
+                            <Image src={stepthree} alt='img' />
+                        </div>
                     </div>
                     <div className='flex-1'>
                         <div className='flex'>
@@ -115,11 +111,9 @@ const ProductDevelopmentCycle = () => {
                         </div>
                     </div>
                 </div>
-                <img
-                    className='mx-auto my-5'
-                    src='/ProductDevelopmentImage/dots-line.png'
-                    alt='img'
-                />
+                <div className='flex justify-center my-5'>
+                    <Image src={dots} alt='img' />
+                </div>
                 {/* step-four */}
                 <div className='flex flex-col md:flex-row shadow-default rounded-2xl'>
                     <div className='flex-1 details'>
@@ -140,11 +134,9 @@ const ProductDevelopmentCycle = () => {
                         </div>
                     </div>
                     <div className='flex-1 image'>
-                        <img
-                            className='mx-auto p-5'
-                            src='/ProductDevelopmentImage/step-four.svg'
-                            alt='img'
-                        />
+                        <div className='mx-auto p-5'>
+                            <Image src={stepfour} alt='img' />
+                        </div>
                     </div>
                 </div>
             </div>

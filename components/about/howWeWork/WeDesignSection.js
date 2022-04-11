@@ -1,5 +1,6 @@
 import React from 'react'
-
+import Image from 'next/image'
+import weDesign from '../../../public/we-design.png'
 const WeDesignSection = () => {
     return (
         <div className='custom-container '>
@@ -22,7 +23,7 @@ const WeDesignSection = () => {
                     </p>
                 </div>
                 <div className='flex-1 md:mx-10 mx-0 md:my-auto mt-10'>
-                    <img className='mx-auto' src='/we-design.png' alt='img' />
+                    <Image className='mx-auto' src={weDesign} alt='img' />
                 </div>
             </div>
         </div>

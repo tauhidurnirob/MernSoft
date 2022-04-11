@@ -1,5 +1,15 @@
 import React from 'react'
+import Image from 'next/image'
 import Scroll, { animateScroll as scroll } from 'react-scroll'
+
+import blankSpace from '../../../public/ourDevProcessIcon/blank-space.png'
+import stepOne from '../../../public/ourDevProcessIcon/step-one.png'
+import stepTwo from '../../../public/ourDevProcessIcon/step-two.png'
+import stepThree from '../../../public/ourDevProcessIcon/step-three.png'
+import stepFour from '../../../public/ourDevProcessIcon/step-four.png'
+import stepFive from '../../../public/ourDevProcessIcon/step-five.png'
+import stepSix from '../../../public/ourDevProcessIcon/step-six.png'
+import line from '../../../public/ourDevProcessIcon/middle-line.png'
 const OurDevProcess = () => {
     return (
         <div className='custom-container'>
@@ -17,11 +27,9 @@ const OurDevProcess = () => {
                 <div className='flex mx-auto flex-col md:flex-row'>
                     <div className='flex-auto mx-auto'>
                         {/* item two */}
-                        <img
-                            className='mx-auto'
-                            src='/ourDevProcessIcon/blank-space.png'
-                            alt='icon'
-                        />
+                        <div className='mx-auto'>
+                            <Image src={blankSpace} alt='icon' />
+                        </div>
 
                         <div className='flex'>
                             <p className='custom-paragraph mt-14 text-right'>
@@ -36,18 +44,14 @@ const OurDevProcess = () => {
                                 }}>
                                 Planning
                             </h1>
-                            <img
-                                className='w-20 h-20'
-                                src='/ourDevProcessIcon/step-two.png'
-                                alt='icon'
-                            />
+                            <div className='w-20 h-20'>
+                                <Image src={stepTwo} alt='icon' />
+                            </div>
                         </div>
                         {/* item four */}
-                        <img
-                            className='mx-auto'
-                            src='/ourDevProcessIcon/blank-space.png'
-                            alt='icon'
-                        />
+                        <div className='mx-auto'>
+                            <Image src={blankSpace} alt='icon' />
+                        </div>
 
                         <div className='flex'>
                             <p className='custom-paragraph mt-14 text-right'>
@@ -63,18 +67,14 @@ const OurDevProcess = () => {
                                 }}>
                                 Development
                             </h1>
-                            <img
-                                className='w-20 h-20'
-                                src='/ourDevProcessIcon/step-four.png'
-                                alt='icon'
-                            />
+                            <div className='w-20 h-20'>
+                                <Image src={stepFour} alt='icon' />
+                            </div>
                         </div>
                         {/* item six */}
-                        <img
-                            className='mx-auto'
-                            src='/ourDevProcessIcon/blank-space.png'
-                            alt='icon'
-                        />
+                        <div className='mx-auto'>
+                            <Image src={blankSpace} alt='icon' />
+                        </div>
 
                         <div className='flex'>
                             <p className='custom-paragraph mt-14 text-right'>
@@ -91,28 +91,21 @@ const OurDevProcess = () => {
                                 }}>
                                 Delivery
                             </h1>
-                            <img
-                                className='w-20 h-20'
-                                src='/ourDevProcessIcon/step-six.png'
-                                alt='icon'
-                            />
+                            <div className='w-20 h-20'>
+                                <Image src={stepSix} alt='icon' />
+                            </div>
                         </div>
                     </div>
                     <div className='md:flex-auto md:block hidden'>
-                        <img
-                            src='/ourDevProcessIcon/middle-line.png'
-                            alt='img'
-                        />
+                        <Image src={line} alt='img' />
                     </div>
                     {/* // right side */}
                     <div className='flex-auto mx-auto'>
                         {/* // item one */}
                         <div className='flex md:mt-0 mt-32'>
-                            <img
-                                className='w-20 h-20'
-                                src='/ourDevProcessIcon/step-one.png'
-                                alt='icon'
-                            />
+                            <div className='w-20 h-20'>
+                                <Image src={stepOne} alt='icon' />
+                            </div>
                             <h1
                                 style={{
                                     color: '#E8505B',
@@ -127,17 +120,13 @@ const OurDevProcess = () => {
                             </p>
                         </div>
                         {/* item-three */}
-                        <img
-                            className='mx-auto'
-                            src='/ourDevProcessIcon/blank-space.png'
-                            alt='icon'
-                        />
+                        <div className='mx-auto'>
+                            <Image src={blankSpace} alt='icon' />
+                        </div>
                         <div className='flex'>
-                            <img
-                                className='w-20 h-20'
-                                src='/ourDevProcessIcon/step-three.png'
-                                alt='icon'
-                            />
+                            <div className='w-20 h-20'>
+                                <Image src={stepThree} alt='icon' />
+                            </div>
                             <h1
                                 style={{
                                     color: '#4DD59E',
@@ -152,17 +141,13 @@ const OurDevProcess = () => {
                             </p>
                         </div>
                         {/* item-five */}
-                        <img
-                            className='mx-auto'
-                            src='/ourDevProcessIcon/blank-space.png'
-                            alt='icon'
-                        />
+                        <div className='mx-auto'>
+                            <Image src={blankSpace} alt='icon' />
+                        </div>
                         <div className='flex'>
-                            <img
-                                className='w-20 h-20'
-                                src='/ourDevProcessIcon/step-five.png'
-                                alt='icon'
-                            />
+                            <div className='w-20 h-20'>
+                                <Image src={stepFive} alt='icon' />
+                            </div>
                             <h1
                                 style={{
                                     color: '#819BF9',

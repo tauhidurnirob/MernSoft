@@ -1,4 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
+
+import solutionOne from '../../public/solutionIcons/solution-icon-one.png'
+import solutionTwo from '../../public/solutionIcons/solution-icon-two.png'
+import solutionThree from '../../public/solutionIcons/solution-icon-three.png'
+import solutionFour from '../../public/solutionIcons/solution-icon-four.png'
+import solutionFive from '../../public/solutionIcons/solution-icon-five.png'
+import solutionSix from '../../public/solutionIcons/solution-icon-six.png'
+import solutionSeven from '../../public/solutionIcons/solution-icon-seven.png'
 
 const SolutionSection = () => {
     return (
@@ -15,21 +24,17 @@ const SolutionSection = () => {
                         <div className='flex flex-col sm:flex-row'>
                             <div className='flex-1 md:my-auto my-0'>
                                 <div className='icon-card'>
-                                    <img
-                                        className='icon-card-image'
-                                        src='/solutionIcons/solution-icon-two.png'
-                                        alt='img'
-                                    />
+                                    <div className='icon-card-image'>
+                                        <Image src={solutionTwo} alt='img' />
+                                    </div>
                                     <h1 className='icon-card-title'>
                                         On Time <br /> Delivery
                                     </h1>
                                 </div>
                                 <div className='icon-card md:mb-8 mb-0'>
-                                    <img
-                                        className='icon-card-image'
-                                        src='/solutionIcons/solution-icon-four.png'
-                                        alt='img'
-                                    />
+                                    <div className='icon-card-image'>
+                                        <Image src={solutionFour} alt='img' />
+                                    </div>
                                     <h1 className='icon-card-title'>
                                         Data <br /> Security
                                     </h1>
@@ -37,31 +42,25 @@ const SolutionSection = () => {
                             </div>
                             <div className='flex-1'>
                                 <div className='icon-card'>
-                                    <img
-                                        className='icon-card-image'
-                                        src='/solutionIcons/solution-icon-one.png'
-                                        alt='img'
-                                    />
+                                    <div className='icon-card-image'>
+                                        <Image src={solutionOne} alt='img' />
+                                    </div>
                                     <h1 className='icon-card-title'>
                                         Effective <br /> Communication
                                     </h1>
                                 </div>
                                 <div className='icon-card'>
-                                    <img
-                                        className='icon-card-image'
-                                        src='/solutionIcons/solution-icon-three.png'
-                                        alt='img'
-                                    />
+                                    <div className='icon-card-image'>
+                                        <Image src={solutionThree} alt='img' />
+                                    </div>
                                     <h1 className='icon-card-title'>
                                         Quality <br /> Work
                                     </h1>
                                 </div>
                                 <div className='icon-card'>
-                                    <img
-                                        className='icon-card-image'
-                                        src='/solutionIcons/solution-icon-five.png'
-                                        alt='img'
-                                    />
+                                    <div className='icon-card-image'>
+                                        <Image src={solutionFive} alt='img' />
+                                    </div>
                                     <h1 className='icon-card-title'>
                                         Talented <br /> Developers
                                     </h1>
@@ -88,11 +87,9 @@ const SolutionSection = () => {
                         <div className='flex flex-col sm:flex-row'>
                             <div className='flex-1'>
                                 <div className='icon-card md:mb-8 mb-0'>
-                                    <img
-                                        className='icon-card-image'
-                                        src='/solutionIcons/solution-icon-six.png'
-                                        alt='img'
-                                    />
+                                    <div className='icon-card-image'>
+                                        <Image src={solutionSix} alt='img' />
+                                    </div>
                                     <h1 className='icon-card-title'>
                                         Technical <br /> Proficiency
                                     </h1>
@@ -100,11 +97,9 @@ const SolutionSection = () => {
                             </div>
                             <div className='flex-1 md:mt-44 mt-0'>
                                 <div className='icon-card md:mb-8 mb-0'>
-                                    <img
-                                        className='icon-card-image'
-                                        src='/solutionIcons/solution-icon-seven.png'
-                                        alt='img'
-                                    />
+                                    <div className='icon-card-image'>
+                                        <Image src={solutionSeven} alt='img' />
+                                    </div>
                                     <h1 className='icon-card-title'>
                                         Industry-Specific <br /> Experience
                                     </h1>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Scroll, { animateScroll as scroll } from 'react-scroll'
-
+import Image from 'next/image'
+import ourCompanyHero from '../../../public/ourCompany-heroSection-object.png'
 const HeroSection = () => {
     const Link = Scroll.Link
     return (
@@ -37,11 +38,9 @@ const HeroSection = () => {
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center',
                     }}>
-                    <img
-                        className='mx-auto'
-                        src='/ourCompany-heroSection-object.png'
-                        alt='img'
-                    />
+                    <div className='flex justify-center'>
+                        <Image src={ourCompanyHero} alt='img' />
+                    </div>
                 </div>
             </div>
             <p></p>

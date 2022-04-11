@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+
 import { HiringDataOne, HiringDataTwo } from './HiringSectionData'
 const HiringSection = () => {
     return (
@@ -19,10 +21,12 @@ const HiringSection = () => {
                                 <div
                                     key={item.id}
                                     className='flex shadow-default rounded-2xl p-5 m-5'>
-                                    <img
+                                    <Image
                                         className='my-auto '
                                         src={item.imgUrl}
                                         alt='img'
+                                        width='100'
+                                        height='100'
                                     />
                                     <div className='description ml-5 my-auto'>
                                         <h1 className='title text-xl'>
@@ -40,10 +44,12 @@ const HiringSection = () => {
                                 <div
                                     key={item.id}
                                     className='flex shadow-default rounded-2xl p-5 m-5'>
-                                    <img
+                                    <Image
                                         className='my-auto '
                                         src={item.imgUrl}
                                         alt='img'
+                                        width='100'
+                                        height='100'
                                     />
                                     <div className='description ml-5 my-auto'>
                                         <h1 className='title text-xl'>

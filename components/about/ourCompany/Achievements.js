@@ -1,5 +1,6 @@
 import React from 'react'
 import { AchievementsData } from '/components/about/ourCompany/AchievementsData'
+import Image from 'next/image'
 const Achievements = () => {
     return (
         <div
@@ -28,9 +29,11 @@ const Achievements = () => {
                         <div className='flex justify-center flex-wrap lg:flex-nowrap'>
                             {AchievementsData.map((item) => (
                                 <div className={item.className} key={item.id}>
-                                    <img
+                                    <Image
                                         className='mx-auto w-18 h-18'
                                         src={item.imageUrl}
+                                        width='100'
+                                        height='100'
                                         alt='icon'
                                     />
                                     <h1 className='mt-3 w-min text-secondary text-xl font-bold'>
