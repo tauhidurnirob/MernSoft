@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body,
+#__next {
+  width: 100%;
+  height: 100%;
+}
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #2f0c68;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background 0.3s ease-in-out;
+  margin-bottom: 1rem;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown:hover .dropdown-arrow {
+  transform: rotateX(180deg);
+}
+
+@layer components {
+  .custom-container {
+    @apply max-w-7xl mx-auto px-4 py-5;
+  }
+  .call-to-action {
+    @apply transition duration-500 ease-in-out bg-primary text-white hover:bg-white hover:text-primary px-6 py-2 rounded-full border-2 font-bold border-primary;
+  }
+  .lang-navbar-btn {
+    @apply transition duration-500 ease-in-out bg-white text-primary hover:bg-primary hover:text-white px-6 py-2 rounded-full border-2 font-bold border-primary m-2;
+  }
+  .active {
+    @apply bg-primary text-white;
+  }
+  .title {
+    @apply text-secondary font-bold lg:text-4xl text-3xl;
+  }
+  .custom-paragraph {
+    @apply text-paragraphColor font-bold;
+  }
+  .heroIcon {
+    @apply w-5 h-5 my-auto bg-primary text-white rounded-full border-2 border-primary;
+  }
+  .icon-card {
+    @apply shadow-default bg-white  py-12 m-5 md:m-8  rounded-3xl text-center;
+  }
+  .icon-card-image {
+    @apply md:w-16 w-12 h-auto mx-auto;
+  }
+  .icon-card-title {
+    @apply pt-5 font-bold text-secondary;
+  }
+  .contactUs-input {
+    @apply px-3 py-2 placeholder-secondary font-bold text-lg relative bg-transparent  rounded  border-b-2 border-secondary outline-none w-full;
+  }
+}
